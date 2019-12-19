@@ -390,7 +390,7 @@ You can set a variable to ``''`` if you want to concatenate strings:
 
    my $SqlStatement = '';
    for my $Part (@Parts) {
-       $SqlStatement .= $Part;
+       $SqlStatement = $SqlStatement . $Part;
    }
 
 Otherwise you would get an *uninitialized* warning.
